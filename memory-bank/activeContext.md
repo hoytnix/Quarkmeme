@@ -199,6 +199,7 @@
   - Generated AI cover art at `public/og-cover.jpg` (ship-helm + orbital crew nodes) referenced by OG/Twitter/JSON-LD.
   - Added `app/sitemap.ts` covering `/`, `/chat`, `/crew`, `/vault`, `/menu`, `/settings`.
   - Verified: `pnpm exec tsc --noEmit` clean, `pnpm build` green (12 static pages incl. `/sitemap.xml`).
+- Follow-up: installed `@vercel/analytics` via pnpm, mounted `<Analytics />` in `app/layout.tsx`, and switched canonical URL to `https://www.quarkmeme.com` across layout/sitemap/robots/llms/metadata; re-verified clean.
 
 ## Invariants Maintained
 1. Local-First SQLite storage guarantee (zero cloud database bills, all company profiles and records persisted in browser OPFS SQLite).

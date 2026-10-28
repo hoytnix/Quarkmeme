@@ -176,6 +176,10 @@
 - [x] SEO & AI-Discovery Bundle:
   - `public/robots.txt` (allow-all + AI crawler welcome list + `/api/` disallow + sitemap pointer), `public/llms.txt` (llmstxt.org format with Terminally Skilled MUD aside @ https://terminallyskilled.rest), expanded SEO metadata + JSON-LD `@graph` (TehWiz Productions Organization, WebSite, SoftwareApplication) in `app/layout.tsx`, AI-generated `public/og-cover.jpg`, `app/sitemap.ts` for 6 routes.
   - Verified with `pnpm exec tsc --noEmit` (0 errors) and `pnpm build` (12 static pages incl. `/sitemap.xml`).
+- [x] Vercel Analytics + www canonical:
+  - Installed `@vercel/analytics` (v2.0.1) via pnpm and mounted `<Analytics />` in `app/layout.tsx` body.
+  - Switched canonical site URL to `https://www.quarkmeme.com` across `app/layout.tsx` (metadataBase, OG/Twitter, JSON-LD), `app/sitemap.ts`, `public/robots.txt`, `public/llms.txt`, and `metadata.json` domain.
+  - Verified with `pnpm exec tsc --noEmit` (0 errors) and `pnpm build` (green).
 
 ### In Progress / Roadmap
 - [ ] Automated vault file watcher & background markdown folder sync.

@@ -1,6 +1,6 @@
 # Quarkmeme robots.txt — crawlers welcome, traffic encouraged.
-# Canonical site: https://quarkmeme.com
-# LLM guide for AI agents/crawlers: https://quarkmeme.com/llms.txt
+# Canonical site: https://www.quarkmeme.com
+# LLM guide for AI agents/crawlers: https://www.quarkmeme.com/llms.txt
 
 User-agent: *
 Allow: /
@@ -51,4 +51,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://quarkmeme.com/sitemap.xml
+Sitemap: https://www.quarkmeme.com/sitemap.xml

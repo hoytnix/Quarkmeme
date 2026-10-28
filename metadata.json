@@ -2,7 +2,7 @@
   "name": "Quarkmeme",
   "short_name": "Quarkmeme",
   "description": "Local-first offline-ready autonomous multi-agent knowledge canvas powered by SQLite WASM with OPFS.",
-  "domain": "Quarkmeme.com",
+  "domain": "www.quarkmeme.com",
   "display": "standalone",
   "theme_color": "#0f172a",
   "background_color": "#020617"

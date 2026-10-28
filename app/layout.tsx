@@ -5,8 +5,9 @@ import { LlmSetupModal } from '@/components/settings/LlmSetupModal';
 import { CompanySetupModal } from '@/components/onboarding/CompanySetupModal';
 import { ThemeSelectionModal } from '@/components/settings/ThemeSelectionModal';
 import { BottomNav } from '@/components/layout/BottomNav';
+import { Analytics } from '@vercel/analytics/next';
 
-const SITE_URL = 'https://quarkmeme.com';
+const SITE_URL = 'https://www.quarkmeme.com';
 const SITE_NAME = 'Quarkmeme';
 const SITE_TAGLINE = 'Local-First Multi-Agent Autonomous Canvas';
 const SITE_DESCRIPTION =
@@ -84,13 +85,13 @@ const jsonLd = {
       url: 'https://tehwiz.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://quarkmeme.com/icon-512.png',
+        url: 'https://www.quarkmeme.com/icon-512.png',
       },
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://quarkmeme.com/#website',
-      url: 'https://quarkmeme.com',
+      '@id': 'https://www.quarkmeme.com/#website',
+      url: 'https://www.quarkmeme.com',
       name: 'Quarkmeme',
       description: SITE_DESCRIPTION,
       publisher: { '@id': 'https://tehwiz.com/#organization' },
@@ -98,16 +99,16 @@ const jsonLd = {
     },
     {
       '@type': 'SoftwareApplication',
-      '@id': 'https://quarkmeme.com/#app',
+      '@id': 'https://www.quarkmeme.com/#app',
       name: 'Quarkmeme',
-      url: 'https://quarkmeme.com',
+      url: 'https://www.quarkmeme.com',
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: SITE_DESCRIPTION,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       author: { '@id': 'https://tehwiz.com/#organization' },
       publisher: { '@id': 'https://tehwiz.com/#organization' },
-      image: 'https://quarkmeme.com/og-cover.jpg',
+      image: 'https://www.quarkmeme.com/og-cover.jpg',
       softwareVersion: '0.1.0',
       license: 'https://opensource.org/licenses/MIT',
     },
@@ -143,6 +144,7 @@ export default function RootLayout({
           <CompanySetupModal />
           <ThemeSelectionModal />
         </SettingsProvider>
+        <Analytics />
       </body>
     </html>
   );

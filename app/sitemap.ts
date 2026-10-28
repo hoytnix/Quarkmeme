@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const SITE_URL = 'https://quarkmeme.com';
+const SITE_URL = 'https://www.quarkmeme.com';
 
 const ROUTES = ['', '/chat', '/crew', '/vault', '/menu', '/settings'];
 

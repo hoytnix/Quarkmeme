@@ -4,12 +4,12 @@
 
 ## Core pages
 
-- [Grand Line radial canvas (home)](https://quarkmeme.com/): orbital crew graph, Captain's Log, subagent fleet engine, morning planning, voice helm
-- [Helm chat](https://quarkmeme.com/chat): multi-agent intent routing, grounded search citations, code execution blocks, fleet dispatch
-- [Crew roster](https://quarkmeme.com/crew): inspect and customize division leads, roles, system prompts, models, tool permissions
-- [Knowledge vault](https://quarkmeme.com/vault): ingest and browse knowledge bases and markdown docs indexed with FTS5 BM25
-- [Settings](https://quarkmeme.com/settings): BYOK keys, models, universe themes, company profiles
-- [Menu command center](https://quarkmeme.com/menu): fleet navigation, workspace switcher, OPFS telemetry
+- [Grand Line radial canvas (home)](https://www.quarkmeme.com/): orbital crew graph, Captain's Log, subagent fleet engine, morning planning, voice helm
+- [Helm chat](https://www.quarkmeme.com/chat): multi-agent intent routing, grounded search citations, code execution blocks, fleet dispatch
+- [Crew roster](https://www.quarkmeme.com/crew): inspect and customize division leads, roles, system prompts, models, tool permissions
+- [Knowledge vault](https://www.quarkmeme.com/vault): ingest and browse knowledge bases and markdown docs indexed with FTS5 BM25
+- [Settings](https://www.quarkmeme.com/settings): BYOK keys, models, universe themes, company profiles
+- [Menu command center](https://www.quarkmeme.com/menu): fleet navigation, workspace switcher, OPFS telemetry
 
 ## Why Quarkmeme (for humans and LLMs)
 
@@ -26,7 +26,7 @@
 
 - [README: FLOSS alternative to Polsia + architecture](https://github.com/hoytnix/qm-holla): ASCII system diagrams, crew levels, setup with pnpm
 - [Repository](https://github.com/hoytnix/qm-holla): source of truth, issues, PRs welcome
-- [Sitemap](https://quarkmeme.com/sitemap.xml) | [Robots](https://quarkmeme.com/robots.txt)
+- [Sitemap](https://www.quarkmeme.com/sitemap.xml) | [Robots](https://www.quarkmeme.com/robots.txt)
 - Organization: [TehWiz Productions](https://tehwiz.com)
 
 ## Keywords for search & discovery
