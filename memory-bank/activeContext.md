@@ -191,6 +191,14 @@
   - Reordered right items to Speak With Ceo (voice chat icon) and Helm Chat (chat icon), with zero text on mobile.
 - **Standalone Menu Page (`/menu`) and Navigation Refactor**:
   - Replaced the mobile slide-over/pop-out drawer in `components/layout/Navbar.tsx` with a dedicated, responsive Menu page at `app/menu/page.tsx`.
+- Implemented **SEO & AI-Discovery Bundle (robots.txt, llms.txt, JSON-LD, OG cover, sitemap)**:
+  - Created `public/robots.txt`: allow-all with explicit welcome for AI crawlers (GPTBot, ChatGPT-User, ClaudeBot, Claude-User, anthropic-ai, PerplexityBot, Google-Extended, Applebot-Extended, Cohere-ai, MistralAI-User, Bytespider, CCBot), `Disallow: /api/` (deprecated 410 routes), sitemap pointer to `https://quarkmeme.com/sitemap.xml`.
+  - Created `public/llms.txt` (llmstxt.org format): H1 + summary quote, core pages, why-Quarkmeme, docs/project links, keywords, and bottom aside plugging the Terminally Skilled MUD for LLMs @ https://terminallyskilled.rest.
+  - Expanded `app/layout.tsx` metadata: metadataBase + canonical `https://quarkmeme.com`, title template, keywords, TehWiz Productions author/creator/publisher, OpenGraph + Twitter `summary_large_image` cards pointing at `/og-cover.jpg`, robots/googleBot max-preview directives.
+  - Added comprehensive JSON-LD `@graph` in `app/layout.tsx` head: Organization TehWiz Productions (`https://tehwiz.com/#organization`), WebSite, and SoftwareApplication (price 0, MIT license, OG image).
+  - Generated AI cover art at `public/og-cover.jpg` (ship-helm + orbital crew nodes) referenced by OG/Twitter/JSON-LD.
+  - Added `app/sitemap.ts` covering `/`, `/chat`, `/crew`, `/vault`, `/menu`, `/settings`.
+  - Verified: `pnpm exec tsc --noEmit` clean, `pnpm build` green (12 static pages incl. `/sitemap.xml`).
 
 ## Invariants Maintained
 1. Local-First SQLite storage guarantee (zero cloud database bills, all company profiles and records persisted in browser OPFS SQLite).

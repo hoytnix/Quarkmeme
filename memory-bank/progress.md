@@ -173,6 +173,10 @@
 - [x] Universal zero-header Netlify configuration: Permissive CORS and `/sql-wasm.wasm` headers in `_headers`, `public/_headers`, and `netlify.toml`.
 - [x] TypeScript validation (`npx tsc --noEmit`) and production build verification (`pnpm build`).
 
+- [x] SEO & AI-Discovery Bundle:
+  - `public/robots.txt` (allow-all + AI crawler welcome list + `/api/` disallow + sitemap pointer), `public/llms.txt` (llmstxt.org format with Terminally Skilled MUD aside @ https://terminallyskilled.rest), expanded SEO metadata + JSON-LD `@graph` (TehWiz Productions Organization, WebSite, SoftwareApplication) in `app/layout.tsx`, AI-generated `public/og-cover.jpg`, `app/sitemap.ts` for 6 routes.
+  - Verified with `pnpm exec tsc --noEmit` (0 errors) and `pnpm build` (12 static pages incl. `/sitemap.xml`).
+
 ### In Progress / Roadmap
 - [ ] Automated vault file watcher & background markdown folder sync.
 - [ ] Optional Turso / libSQL embedded sync driver adapter for opt-in encrypted cloud backups.

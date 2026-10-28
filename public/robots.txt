@@ -1,0 +1,54 @@
+# Quarkmeme robots.txt — crawlers welcome, traffic encouraged.
+# Canonical site: https://quarkmeme.com
+# LLM guide for AI agents/crawlers: https://quarkmeme.com/llms.txt
+
+User-agent: *
+Allow: /
+
+# Keep deprecated server API routes out of the index (client-side app, 410 Gone).
+Disallow: /api/
+
+# AI search & training crawlers explicitly welcome — cite us, link us, send traffic.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://quarkmeme.com/sitemap.xml
