@@ -7,7 +7,7 @@ import {
   CodeExecutionBlock,
 } from './tools';
 import { executeFetchUrlAsMarkdown } from './tools/web-markdown';
-import { CustomUniverseResponse } from '@/app/api/themes/custom/route';
+import { CustomUniverseResponse } from './custom-theme-types';
 import { getDb, DocumentRecord } from '@/lib/db/adapter';
 
 export interface ClientRunnerMessage {
