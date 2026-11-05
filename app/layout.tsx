@@ -136,9 +136,14 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500/30 pt-16 md:pt-0 pb-20 md:pb-0">
+      <body className="min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500/30 pt-16 md:pt-0 pb-20 md:pb-0 flex flex-col">
         <SettingsProvider>
-          {children}
+          <div className="flex-1 flex flex-col">
+            {children}
+          </div>
+          <footer className="w-full py-4 text-center text-xs text-slate-500 border-t border-white/5">
+            Copyright (C) 2026 <a href="https://isicecakeoisis.com" target="_blank" rel="noopener">ISICECAKEOISIS</a>. A <a href="https://tehwiz.com" target="_blank" rel="noopener">TehWiz Production</a>.
+          </footer>
           <BottomNav />
           <LlmSetupModal />
           <CompanySetupModal />
